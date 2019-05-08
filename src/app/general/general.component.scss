@@ -1,0 +1,156 @@
+@import "../../variables";
+
+
+.latestblog-box-section {
+  margin-top: 12px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1);
+  display: block;
+  position: relative;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+.post-section {
+  min-height: 440px;
+}
+
+.news-source {
+  padding: 0;
+  margin: 15px 0 0;
+}
+
+.news-time {
+  margin-right: 5px;
+}
+
+.news-content {
+  min-height: 110px;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0 0 0 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: $color-grey-lighter;
+  min-width: 300px;
+}
+
+.mat-card-image {
+  width: calc(100% + 30px);
+  height: 200px;
+  margin: 0 -24px 16px -24px; // Top-Right-Bottom-Left
+  padding-top: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.post-title {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: $color-black;
+}
+
+.post-message {
+  font-size: 14px;
+  letter-spacing: 0.4px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $color-black-light;
+  text-align: justify;
+}
+
+.button-cv {
+  border-radius: 2px;
+  background-color: $color-black-light;
+  border: none;
+  color: $color-white;
+  text-align: center;
+  font-size: 14px;
+  padding: 2px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+}
+
+.button-cv span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-cv span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-cv:hover span {
+  padding-right: 25px;
+}
+
+.button-cv:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+// CSS for extra-small devices (Mobile phones)
+@media only screen and (max-width: 599px) {
+  .latestblog-box-section {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+
+// CSS for smaller devices (tablets)
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .mat-card-image {
+    width: calc(100% + 30px);
+    height: 400px;
+    margin: 0 -24px 16px -24px; // Top-Right-Bottom-Left
+    padding-top: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .latestblog-box-section {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+
+// CSS for medium devices (laptops)
+@media only screen and (min-width: 960px) and (max-width: 1279px) {
+  .mat-card-image {
+    width: calc(100% + 30px);
+    height: 300px;
+    margin: 0 -24px 16px -24px; // Top-Right-Bottom-Left
+    padding-top: 0;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+
+  .latestblog-box-section {
+    margin-top: 12px;
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+

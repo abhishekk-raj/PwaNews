@@ -1,0 +1,27 @@
+<mat-toolbar class="header">
+  <mat-toolbar-row fxLayout="row">
+
+    <button
+      fxLayoutAlign="start center"
+      fxShow.sm="true"
+      fxShow.xs="true"
+      fxShow.md="false"
+      fxShow.lg="false"
+      fxShow.xl="false"
+      mat-icon-button (click)="openNav()">
+      <mat-icon style="color: white">dehaze</mat-icon>
+    </button>
+
+    <h5
+      fxLayoutAlign="start center"
+      fxLayoutAlign.xs="center center"
+      fxLayoutAlign.sm="center center"
+      class="logo">PwaNews</h5>
+
+    <span class="flex-spacer"></span>
+    <button mat-icon-button (click)="subscribeToNotifications()">
+      <mat-icon style="color: white">notifications_active</mat-icon>
+    </button>
+
+  </mat-toolbar-row>
+</mat-toolbar>

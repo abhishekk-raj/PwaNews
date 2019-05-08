@@ -1,0 +1,48 @@
+@import "theme";
+@import "variables";
+
+
+body {
+  @extend %no-padding-margin;
+  font-family: $font-family !important;
+  background-color: $color-body;
+}
+
+
+.component-style {
+  font-family: $font-family !important;
+  min-height: 90vh;
+  padding-bottom: 12px;
+}
+
+.flex-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-drawer {
+  position: fixed !important;
+  z-index: 4;
+  display: block;
+  top: 0;
+  bottom: 0;
+  outline: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transform: translate3d(-100%, 0, 0);
+}
+
+
+// CSS for extra-small devices (Mobile phones)
+@media only screen and (max-width: 599px) {
+  .component-style {
+    padding-top: 54px;
+  }
+}
+
+
+// CSS for smaller devices (tablets)
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .component-style {
+    padding-top: 56px;
+  }
+}

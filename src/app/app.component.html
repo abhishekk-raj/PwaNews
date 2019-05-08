@@ -1,0 +1,14 @@
+<mat-sidenav-container class="sidenav-container" (backdropClick)="close('backdrop')">
+
+  <mat-sidenav position="start" #sidenav (keydown.escape)="close('escape')" disableClose>
+    <app-side-nav></app-side-nav>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <app-header></app-header>
+    <app-navbar></app-navbar>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

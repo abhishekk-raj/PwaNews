@@ -1,0 +1,109 @@
+<div class="nav-header">
+  <img
+    src="../../assets/images/profile_icon.png"
+    class="profile_img_size cropcircle"
+    alt="dp"
+  />
+
+  <p class="profile-name">{{ username }}</p>
+</div>
+
+<div>
+  <mat-list>
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/home"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">home</mat-icon>
+        Home
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/general"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">person</mat-icon>
+        General
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/business"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">business</mat-icon>
+        Business
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/entertainment"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">movie</mat-icon>
+        Entertainment
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/health"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">local_hospital</mat-icon>
+        Health
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/science"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">memory</mat-icon>
+        Science
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/sports"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">pool</mat-icon>
+        Sports
+      </a>
+    </mat-list-item>
+
+    <mat-list-item>
+      <a
+        mat-button
+        routerLink="/news/technology"
+        routerLinkActive="active"
+        (click)="closeSideNav()"
+      >
+        <mat-icon class="nav-icon">language</mat-icon>
+        Technology
+      </a>
+    </mat-list-item>
+  </mat-list>
+</div>
