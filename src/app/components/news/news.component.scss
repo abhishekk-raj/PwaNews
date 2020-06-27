@@ -1,10 +1,20 @@
 @import "../../../variables";
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: scale(0.2,0.2);
+  }
+  
+  100% {
+      transform: scale(1,1);
+  }
+}
 
 .latestblog-box-section {
   margin-top: 12px;
   margin-left: 40px;
   margin-right: 40px;
+  animation: slideInFromLeft 2s forwards;
 }
 
 .mat-card {
@@ -114,6 +124,7 @@
     margin-top: 12px;
     margin-left: 12px;
     margin-right: 12px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 }
 
@@ -133,6 +144,7 @@
     margin-top: 12px;
     margin-left: 12px;
     margin-right: 12px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 }
 
@@ -151,6 +163,7 @@
     margin-top: 12px;
     margin-left: 12px;
     margin-right: 12px;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 }
 
