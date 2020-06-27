@@ -16,7 +16,7 @@
     "@angular/animations": "10.0.1",
     "@angular/cdk": "10.0.0",
     "@angular/common": "10.0.1",
-    "@angular/compiler": "~7.2.0",
+    "@angular/compiler": "10.0.1",
     "@angular/core": "~7.2.0",
     "@angular/flex-layout": "^7.0.0-beta.24",
     "@angular/forms": "~7.2.0",
