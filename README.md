@@ -8,7 +8,7 @@ This is Frontend application created with Angular CLI version 7.3.3
 This is a sample application to read news online. I have used News API to fetch latest news and showcase for my users. It is truly responsive application and can fit to any screen size. User can use this application offline and install it to smartphones as well since it is PWA application.
 
 
-## Perquisites
+## Prerequisite
 
 * Install node version ^10
 * Install Angular CLI version 10.0.0
