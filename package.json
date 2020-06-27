@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "pwabuild": "ng build --prod",
-    "pwaprod": "npm run pwabuild && cd dist/PwaNews && http-server -c -1"
+    "pwaprod": "npm run pwabuild && cd dist/PwaNews && npx http-server -c -1"
   },
   "private": true,
   "dependencies": {
