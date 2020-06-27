@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-import {NewsService} from '../services/news.service';
+import { NewsService } from '../../services/news.service';
+import { NewsCategory } from '../../enums/news-category.enum';
 
 @Component({
   selector: 'app-news',
@@ -20,10 +21,8 @@ export class NewsComponent implements OnInit {
 
 
   private getTopHeadlineNews() {
-    this.newsService.getTopHeadlines()
+    this.newsService.getNewsFromNewsAPI(NewsCategory.Business)
       .subscribe(topNews => {
-        // console.log('Top News :: ', topNews.articles);
-
         this.prepareNews(topNews.articles);
       });
   }
@@ -32,8 +31,6 @@ export class NewsComponent implements OnInit {
     while (news.length) {
       this.preparedNews.push(news.splice(0, 4));
     }
-
-    console.log('Prepared News :: ', this.preparedNews);
   }
 
 }

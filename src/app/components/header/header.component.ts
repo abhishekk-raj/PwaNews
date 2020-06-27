@@ -1,8 +1,8 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
-import {SidenavService} from '../services/sidenav.service';
-import {SwPush} from '@angular/service-worker';
-import {NewsService} from '../services/news.service';
+import { SidenavService } from '../../services/sidenav.service';
+import { SwPush } from '@angular/service-worker';
+import { NewsService } from '../../services/news.service';
 
 @Component({
   selector: 'app-header',

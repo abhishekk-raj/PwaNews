@@ -20,18 +20,11 @@ import { MatListModule } from '@angular/material/list';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import 'hammerjs';
-import { NewsComponent } from './news/news.component';
-import { BusinessComponent } from './business/business.component';
-import { EntertainmentComponent } from './entertainment/entertainment.component';
-import { GeneralComponent } from './general/general.component';
-import { HealthComponent } from './health/health.component';
-import { ScienceComponent } from './science/science.component';
-import { SportsComponent } from './sports/sports.component';
-import { TechnologyComponent } from './technology/technology.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { SideNavComponent } from './side-nav/side-nav.component';
+import { NewsComponent } from './components/news/news.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SideNavComponent } from './components/side-nav/side-nav.component';
 import { TruncatePipe } from './pipes/truncate.pipe';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
@@ -40,13 +33,6 @@ import { environment } from '../environments/environment';
   declarations: [
     AppComponent,
     NewsComponent,
-    BusinessComponent,
-    EntertainmentComponent,
-    GeneralComponent,
-    HealthComponent,
-    ScienceComponent,
-    SportsComponent,
-    TechnologyComponent,
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
