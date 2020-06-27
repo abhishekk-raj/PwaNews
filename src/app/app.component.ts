@@ -3,7 +3,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import {SidenavService} from './services/sidenav.service';
 import {MatSidenav} from '@angular/material/sidenav';
 import {SwUpdate} from '@angular/service-worker';
-import {MatSnackBar} from '@angular/material';
+import {MatSnackBar} from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-root',
