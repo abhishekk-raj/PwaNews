@@ -1,0 +1,259 @@
+<div fxLayout="column"
+     fxLayoutAlign="center center"
+     class="component-style">
+
+  <!-- 1st row code starts here -->
+  <div fxLayout="row"
+       fxLayout.sm="column"
+       fxLayout.xs="column"
+       fxLayout.md="column"
+       fxLayoutGap="15px"
+       fxLayoutAlign="center center"
+       class="latestblog-box-section headerxxx"
+       *ngFor="let news of preparedNews">
+
+    <div fxLayout="column"
+         fxLayoutAlign="center center">
+
+      <div fxLayout="row"
+           fxLayout.sm="column"
+           fxLayout.xs="column"
+           fxLayoutGap="10px">
+
+        <div fxLayout.lg="row"
+             fxLayout.xl="row"
+             fxLayout.xs="column"
+             fxLayout.sm="column"
+             fxLayout.md="column"
+             fxLayoutGap="10px"
+             fxFlex="100"
+             fxFlex.gt-md="50">
+
+          <div fxFlex.lt-md="50"
+               fxFlex.lt-sm="100">
+            <mat-card>
+              <mat-card-content>
+                <div fxLayout="column"
+                     fxLayoutAlign="center center">
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+                    <img mat-card-image
+                         [src]="news[0].urlToImage !== null ? news[0].urlToImage : 'assets/images/no-preview.png'"
+                         onError="this.src='assets/images/no-preview.png'" alt="Angular 6">
+                  </div>
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+
+                    <div fxLayout="column"
+                         fxLayoutAlign="center start">
+
+                      <h4 class="post-title font-style no-padding-margin">{{news[0].title | truncate : 60}}</h4>
+
+                      <div class="news-content">
+                        <p class="post-message font-style">
+                          {{news[0].description | truncate : 120}}
+                        </p>
+                      </div>
+
+                      <div fxLayout="row" style="width: 100%">
+                        <div fxFlex="55"
+                             fxLayoutAlign="start center">
+
+                          <h5 class="news-source" fxLayoutAlign="center center">
+                            <mat-icon class="news-time">schedule</mat-icon>
+                            {{news[0].publishedAt | date:'shortTime'}} | {{news[0].source.name}}
+                          </h5>
+                        </div>
+
+                        <div fxFlex="45"
+                             fxLayoutAlign="end center">
+                          <a mat-button class="button-cv" [href]="news[0].url"
+                             target="_blank"><span>Read more</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+          <div fxFlex.lt-md="50"
+               fxFlex.lt-sm="100">
+            <mat-card>
+              <mat-card-content>
+                <div fxLayout="column"
+                     fxLayoutAlign="center center">
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+                    <img mat-card-image
+                         [src]="news[1].urlToImage !== null ? news[1].urlToImage : 'assets/images/no-preview.png'"
+                         onError="this.src='assets/images/no-preview.png'" alt="Angular 6">
+                  </div>
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+
+                    <div fxLayout="column"
+                         fxLayoutAlign="center start">
+
+                      <h4 class="post-title font-style no-padding-margin">{{news[1].title | truncate : 60}}</h4>
+
+                      <div class="news-content">
+                        <p class="post-message font-style">
+                          {{news[1].description | truncate : 120}}
+                        </p>
+                      </div>
+
+                      <div fxLayout="row" style="width: 100%">
+                        <div fxFlex="55"
+                             fxLayoutAlign="start center">
+
+                          <h5 class="news-source" fxLayoutAlign="center center">
+                            <mat-icon class="news-time">schedule</mat-icon>
+                            {{news[1].publishedAt | date:'shortTime'}} | {{news[1].source.name}}
+                          </h5>
+                        </div>
+
+                        <div fxFlex="45"
+                             fxLayoutAlign="end center">
+                          <a mat-button class="button-cv" [href]="news[1].url"
+                             target="_blank"><span>Read more</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+
+        <div fxLayout.lg="row"
+             fxLayout.xl="row"
+             fxLayout.xs="column"
+             fxLayout.sm="column"
+             fxLayout.md="column"
+             fxLayoutGap="10px"
+             fxFlex="100"
+             fxFlex.gt-md="50">
+
+          <div fxFlex.lt-md="50"
+               fxFlex.lt-sm="100">
+            <mat-card>
+              <mat-card-content>
+                <div fxLayout="column"
+                     fxLayoutAlign="center center">
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+                    <img mat-card-image
+                         [src]="news[2].urlToImage !== null ? news[2].urlToImage : 'assets/images/no-preview.png'"
+                         onError="this.src='assets/images/no-preview.png'" alt="Angular 6">
+                  </div>
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+
+                    <div fxLayout="column"
+                         fxLayoutAlign="center start">
+
+                      <h4 class="post-title font-style no-padding-margin">{{news[2].title | truncate : 60}}</h4>
+
+                      <div class="news-content">
+                        <p class="post-message font-style">
+                          {{news[2].description | truncate : 120}}
+                        </p>
+                      </div>
+
+                      <div fxLayout="row" style="width: 100%">
+                        <div fxFlex="55"
+                             fxLayoutAlign="start center">
+
+                          <h5 class="news-source" fxLayoutAlign="center center">
+                            <mat-icon class="news-time">schedule</mat-icon>
+                            {{news[2].publishedAt | date:'shortTime'}} | {{news[2].source.name}}
+                          </h5>
+                        </div>
+
+                        <div fxFlex="45"
+                             fxLayoutAlign="end center">
+                          <a mat-button class="button-cv" [href]="news[2].url"
+                             target="_blank"><span>Read more</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+
+          <div fxFlex.lt-md="50"
+               fxFlex.lt-sm="100">
+            <mat-card>
+              <mat-card-content>
+                <div fxLayout="column"
+                     fxLayoutAlign="center center">
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+                    <img mat-card-image
+                         [src]="news[3].urlToImage !== null ? news[3].urlToImage : 'assets/images/no-preview.png'"
+                         onError="this.src='assets/images/no-preview.png'" alt="Angular 6">
+                  </div>
+
+                  <div fxLayout="row"
+                       fxLayoutAlign="center center">
+
+                    <div fxLayout="column"
+                         fxLayoutAlign="center start">
+
+                      <h4 class="post-title font-style no-padding-margin">{{news[3].title | truncate : 60}}</h4>
+
+                      <div class="news-content">
+                        <p class="post-message font-style">
+                          {{news[3].description | truncate : 120}}
+                        </p>
+                      </div>
+
+                      <div fxLayout="row" style="width: 100%">
+                        <div fxFlex="55"
+                             fxLayoutAlign="start center">
+
+                          <h5 class="news-source" fxLayoutAlign="center center">
+                            <mat-icon class="news-time">schedule</mat-icon>
+                            {{news[3].publishedAt | date:'shortTime'}} | {{news[3].source.name}}
+                          </h5>
+                        </div>
+
+                        <div fxFlex="45"
+                             fxLayoutAlign="end center">
+                          <a mat-button class="button-cv" [href]="news[3].url"
+                             target="_blank"><span>Read more</span></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>

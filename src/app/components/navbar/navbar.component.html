@@ -1,0 +1,15 @@
+<mat-toolbar class="navbar"
+             fxShow.sm="false"
+             fxShow.xs="false">
+  <mat-toolbar-row fxLayout="row"
+                   fxLayoutAlign="start center">
+
+    <div *ngFor="let menu of navbarMenu" style="padding-bottom: 0.1rem">
+      <a mat-button (click)="updateNewsCategory(menu.category)">{{menu.name}}</a>
+    </div>
+    <span class="flex-spacer"></span>
+
+    <input matInput placeholder="Search" type="text" class="search-bar">
+
+  </mat-toolbar-row>
+</mat-toolbar>

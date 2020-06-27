@@ -1,0 +1,32 @@
+@import "../../../variables";
+
+.footer {
+  font-family: $font-family !important;
+  padding: 5px;
+  background-color: $color-grey-light;
+  color: $color-black;
+}
+
+.credit {
+  @extend %no-padding-margin;
+  font-size: 18px !important;
+  padding: 10px !important;
+}
+
+
+// CSS for extra-small devices (Mobile phones)
+@media only screen and (max-width: 599px) {
+  .credit {
+    font-size: 0.8em !important;
+    padding: 0.4em !important;
+  }
+}
+
+
+// CSS for smaller devices (tablets)
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .credit {
+    font-size: 1em !important;
+    padding: 0.4em !important;
+  }
+}

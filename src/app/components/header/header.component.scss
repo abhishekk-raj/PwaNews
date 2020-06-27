@@ -1,0 +1,71 @@
+@import "../../../variables.scss";
+
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+  height: 64px !important;
+}
+
+.mat-toolbar-multiple-rows {
+  min-height: 64px !important;
+}
+
+.header {
+  @extend %no-padding-margin;
+  background-color: $color-primary !important;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 999;
+}
+
+.logo {
+  font-family: $logo-font-family !important;
+  color: $color-primary-lightest;
+  font-weight: bold;
+  font-size: 30px !important;
+}
+
+
+// CSS for extra-small devices (Mobile phones)
+@media only screen and (max-width: 599px) {
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 54px !important;
+  }
+
+  .mat-toolbar-multiple-rows {
+    min-height: 54px !important;
+  }
+
+  .logo {
+    font-weight: 400;
+    font-size: 1.1em !important;
+  }
+
+  .header {
+    background-color: $color-primary !important;
+    position: fixed;
+    padding: 0
+  }
+}
+
+
+// CSS for smaller devices (tablets)
+@media only screen and (min-width: 600px) and (max-width: 959px) {
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    height: 56px !important;
+  }
+
+  .mat-toolbar-multiple-rows {
+    min-height: 56px !important;
+  }
+
+  .logo {
+    font-weight: 400;
+    font-size: 1.2em !important;
+  }
+
+  .header {
+    background-color: $color-primary !important;
+    position: fixed;
+    padding: 0
+  }
+}
