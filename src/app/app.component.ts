@@ -27,7 +27,6 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log('Nav ref :: ', this.sidenav);
     this.sidenavService.setSidenavRef(this.sidenav);
 
     this.updateApplication();

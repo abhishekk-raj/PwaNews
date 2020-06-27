@@ -26,22 +26,6 @@ export class NewsService {
 
     return this.http.get<NewsModel>(URL)
       .pipe(
-        tap(topHeadlines => {
-          console.log('News fetched successfully');
-        }),
-        catchError(error => {
-          return this.processHttpMsg.handleError(error);
-        })
-      );
-  }
-
-  getGeneralNews(): Observable<NewsModel> {
-    return this.http
-      .get<NewsModel>('https://newsapi.org/v2/top-headlines?country=in&category=general&apiKey=3e8e9916b3444f54abd15f3245724e5d')
-      .pipe(
-        tap(generalNews => {
-          console.log('News fetched successfully');
-        }),
         catchError(error => {
           return this.processHttpMsg.handleError(error);
         })
